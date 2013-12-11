@@ -30,21 +30,11 @@
         <title>Higher or Lower</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Higher or Lower</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Loading...</p>
-				<div><!-- class="event received">-->
-					<button id="StartButton" class="topcoat-button" onclick="generateNumber()">Start</button>
-					<div id="Game" class="game" style="display:none;">
-						<input id="GuessValue" type="text" class="topcoat-text-input" placeholder="text" value="">
-						<button id="GuessValue" class="topcoat-button" onclick="isCorrectGuess()">Submit</button>
-					</div>
-				</div>
-            </div>
-        </div>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+		<button id="StartButton" class="topcoat-button" onclick="generateNumber()">Start</button>
+		<div id="Game" class="game" style="display:none;">
+			<input id="GuessValue" type="number" class="topcoat-text-input" placeholder="text" value="">
+			<button id="GuessValue" class="topcoat-button" onclick="isCorrectGuess()">Submit</button>
+			<p><label id="Hint"></label></p>
+		</div>
     </body>
 </html>
