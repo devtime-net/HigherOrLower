@@ -23,21 +23,28 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+		<link rel="stylesheet" type="text/css" href="css/topcoat-mobile-light.css" />
+		<script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/code.js"></script>
+        <title>Higher or Lower</title>
     </head>
     <body>
         <div class="app">
-            <h1>PhoneGap</h1>
+            <h1>Higher or Lower</h1>
             <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+                <p class="event listening">Loading...</p>
+				<div><!-- class="event received">-->
+					<button id="StartButton" class="topcoat-button" onclick="generateNumber()">Start</button>
+					<div id="Game" class="game" style="display:none;">
+						<input id="GuessValue" type="text" class="topcoat-text-input" placeholder="text" value="">
+						<button id="GuessValue" class="topcoat-button" onclick="isCorrectGuess()">Submit</button>
+					</div>
+				</div>
             </div>
         </div>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-			alert('hello world');
         </script>
     </body>
 </html>
