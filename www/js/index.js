@@ -46,8 +46,4 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
-	
-	function startClicked(){
-		alert('what what');
-	}
 };
